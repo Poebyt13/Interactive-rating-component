@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,500;0,900;1,600&display=swap');
+    </style>
+</head>
+<body>
+
+  
+  <main class="main">
+
+      <!-- Rating state start -->
+
+    <div class="container-flex" id="container-flex">
+      <div class="logo">
+        <img src="images/icon-star.svg" alt="logo-star" class="logo-stella">
+      </div>
+      <div class="text">
+        <h1>How did we do?</h1>
+        <p>Please let us know how we did with your support request. All feedback is appreciated 
+          to help us improve our offering!</p>
+      </div>
+      <div class="numbers">
+        <ul>
+          <li><input type="button" value="1" id="pulsante1" onclick="numero1()" id="conferma"></li>
+          <li><input type="button" value="2" id="pulsante2" onclick="numero2()" id="conferma"></li>
+          <li><input type="button" value="3" id="pulsante3" onclick="numero3()" id="conferma"></li>
+          <li><input type="button" value="4" id="pulsante4" onclick="numero4()" id="conferma"></li>
+          <li><input type="button" value="5" id="pulsante5" onclick="numero5()" id="conferma"></li>
+        </ul>
+      </div>
+      <div class="boton">
+        <input type="submit" value="SUBMIT" id="tastoSubmit" onclick="scelta()">
+      </div>
+    </div>
+
+    <!-- Rating state end -->
+
+    <!-- Thank you state start -->
+
+    <div class="container-thank-you" id="container-thank-you">
+      <div class="img-invio">
+        <img src="images/illustration-thank-you.svg" alt="imgDeInvio">
+      </div>
+      <div class="desktop">
+        <p id="chance-number"></p>
+      </div>
+      <div class="text-thankyou">
+        <h3>Thank you!</h3>
+        <p>We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!</p>
+      </div>
+    </div>
+    <!-- Thank you state end -->
+  </main>
+  <script src="code.js"></script>
+</body>
+</html>
